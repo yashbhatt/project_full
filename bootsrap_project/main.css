@@ -1,0 +1,354 @@
+#animal-background1 {
+background-image: url('../bootsrap_project/media/g6.jpg');
+    min-height: 485px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ponk {
+    background-color: #FFF6F6;
+}
+
+#animal-background2 {
+    background-image: url('../bootsrap_project/media/g1.jpg');
+        min-height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+#lion-background {
+    background-image: url('../bootsrap_project/media/banner1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.upcase {
+    text-transform: uppercase !important;
+}
+.pisstank {padding: 2.65rem !important}
+.twhite {
+    color: white !important;
+}
+.fw-thicc {
+    font-weight: 700!important;
+}
+.icon-sizer {
+    font-size: 2.5rem!important;
+}
+.font-size-lg {
+    font-size: 2.7rem !important;
+}
+
+.ls {
+    letter-spacing: 2px;
+}
+
+.rounded-circle {
+    padding: 25px;
+}
+.icon-sizer2 {
+    font-size: 1.5rem !important;
+}
+i.border-primary {
+    border-color: #D3B800!important;
+}
+.goldilocks {
+    color: #D3B800;
+}
+
+.goldilocks-bg {
+    background-color: #D3B800;
+}
+.save-me {
+    margin-top:  30vh;
+}
+.fs-2 {
+    font-size: 2rem !important;
+}
+
+.row .row {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.nibbasaki {
+    border-radius: 36px;
+}
+
+.ice {
+    width: 100% !important;
+}
+.tennis  {
+    background-color: white !important;
+    border: 1px solid lightslategray;
+    box-shadow: none;
+    border-radius :5px;  
+}
+
+.experiment-container {
+    position: absolute;
+}
+.experiment {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: goldenrod;
+    z-index: 2;
+}
+
+.experiment i {
+    margin-left: 18px;
+    margin-top: 16px;
+}
+
+/* button code starts */
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:20px 40px;
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+.btn-white{
+  background:#fff;
+  color:#000;
+}
+.btn:hover{
+   box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+   transform : translateY(-3px);
+}
+.btn:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2)
+  transform:translateY(-1px);
+}
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+.btn-white::after {
+    background: #fff;
+}
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+/* button code ends */
+
+.rounded-border {
+    border-radius: 30px;
+}
+
+.icun-container {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 2px grey;
+}
+
+.icun-container i {
+    margin-top: 17px;
+    color: #D3B800;
+}
+
+.impatient {
+    color: #D3B800;
+}
+input .form-control {
+    padding :50px;
+}
+
+.broad{
+    border: 5px solid #D3B800 !important;
+    border-radius: 15px !important;
+}
+
+form input {
+    box-shadow: 5px 5px 2px grey;
+    padding: 30px !important;
+}
+
+form label {
+    margin-top: 20px;
+}
+
+.pepsi:nth-child(1) {
+    background-image: url(../bootsrap_project/media/banner1.jpg);
+}
+
+.pepsi:nth-child(2) {
+    background-image: url(../bootsrap_project/media/banner2.jpg);
+}
+
+.pepsi:nth-child(3) {
+    background-image: url(../bootsrap_project/media/banner3.jpg);
+}
+.evelyn{
+    margin-bottom: 20px;
+}
+
+.numbers p  {
+    color: white !important;
+}
+
+.vol p {
+    color: white !important;
+}
+
+.poppy {
+    color: white!important;
+}
+
+.eighty-sec {
+    height: 90vh;
+    background-color: #D3B800;
+}
+
+.bgt {
+    background-color: transparent;
+}
+
+.z-index {
+    z-index: 5;
+}
+
+.pxl-5 {
+    padding-right:5rem !important;
+    padding-left: 5rem !important;
+}
+
+.bd-example {
+    height: 70vh;
+}
+
+.lionking {
+    background-image: url("../bootsrap_project/media/banner1.jpg");
+}
+
+
+/* please work */
+
+#bun {
+    height: 95vh !important;
+    background-image: url('../bootsrap_project/media/banner1.jpg')!important           ;  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#boo {
+    height: 95vh;
+    background-image: url('../bootsrap_project/media/banner2.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#bee {
+    height: 95vh;
+    background-image: url('../bootsrap_project/media/banner3.jpg'); 
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.carousel-caption {
+    margin-bottom:12%;
+}
+.carousel-caption h1 {
+    font-size: 6rem;
+    font-weight: 700;   
+}
+
+.whitey {
+    background-color: white !important;
+    height: 4px;
+    width: 25%;
+    margin: 0 auto; 
+    border-radius: 2px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.carousel-caption p {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+#carouselExampleCaptions ol  {
+    margin-bottom: 200px;
+}   
+
+.peppy {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    position: absolute;
+    z-index: 20;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+    color: goldenrod !important;
+    font-weight: 700;
+}
+.mrc {
+    margin-left: 30%; 
+}
+
+.nav-link {
+    color: white!important;
+    font-weight: 700!important;
+    font-size: 1.2rem;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: transparent!important;
+    border-bottom: 5px solid gold;
+}
+
+.mali {
+    margin-left: 5rem;
+}
+
+#please-move {
+    margin-left: 68%;
+}
+
+.daddy {position: relative;}
+.cla {position: relative;}
+.inside-daddy {position: absolute;}
+
+.sticky {
+    position: fixed;
+    top: -1;
+    
+}
