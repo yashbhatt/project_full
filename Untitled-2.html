@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+
+    <style>
+        .out-container {
+            background-color: lightgray;
+        }
+        .format {
+            border: 20px solid lightslategray
+        }
+
+        label, input {
+            display: block; 
+            width: 25% !important; 
+        }
+    </style>
+  </head>
+  <body>
+    <img id='detomaso' src="../Desktop/New folder (3)/media/1920px-De_Tomaso_Pantera_GT5-S_(7160836758).jpg" alt="detomaso1" onmouseover="over()" onmouseout="out()" height="400px" width="400px" class="m-5">
+
+    <hr>
+
+
+    <select id="selection" class="d-block" onchange="color_changer()">
+        <option>red</option>
+        <option>green</option>
+        <option>blue</option>
+    </select>
+
+    <div id="bank" class="p-5 m-2">
+        Content
+    </div>
+
+    <hr>
+
+    <div class="container">
+    <form action="">
+        <label for="">Amount: </label>
+        <input type="text" id="amount" onkeydown="summer()">
+        <label for="">Quantity: </label>
+        <input type="text" id="quantity" onkeydown="summer()">
+    </form>
+
+    <div>
+        <p>The Total Is : <span id="total"></span></p>
+    </div>
+    </div>
+
+    <hr>
+
+
+<div class="inputs container mb-5 mt-5">
+    <label for="">To:</label>
+    <input type="text" id="To" onkeyup="to()" >
+    <label for="">From:</label>
+    <input type="text" id="From" onkeyup="from()" >
+    <label for="">Date:</label>
+    <input type="text" id="Date" onkeyup="datee()" >
+    <label for="">Venue:</label>
+    <input type="text" id='Venue' onkeyup="venue()" >
+
+</div>
+
+    <div class="container out-container format">
+        <div class="row">
+            <div class="first col-lg-6">
+                <div class="to">To : <span id="to"></span></div>
+                <div class="from">From : <span id="from"></span></div>
+            </div>
+            <div class="second col-lg-6">
+                <div class="date">Date : <span id="date"></span></div>
+                <div class="venue">Venue : <span id="venue"></span></div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eius maiores eveniet iste quos voluptate eaque officiis. Nobis adipisci ut, porro excepturi a esse amet suscipit, doloremque nulla, ipsa ex!</p> 
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis saepe quibusdam accusantium ipsa dolore cum, nisi dolor doloribus maiores magni tenetur, magnam dignissimos quis quasi sapiente nihil obcaecati consectetur! Qui!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto facilis sit consectetur, consequatur blanditiis molestias, fugit eius excepturi esse molestiae tempora eligendi possimus quae fugiat soluta, ea iusto cupiditate aut.</p>
+        </div>
+        <div class="ending">
+            Regards
+        </div>
+    </div>
+    
+    <script>
+        function over () {
+            document.getElementById('detomaso').setAttribute('src' , '../Desktop/New folder (3)/media/1984 De Tomaso Pantera GT5.jpg');
+        }
+        function out () {
+            document.getElementById('detomaso').setAttribute('src' , '../Desktop/New folder (3)/media/1920px-De_Tomaso_Pantera_GT5-S_(7160836758).jpg');
+        }
+        function color_changer () {
+            var a = document.getElementById('selection').value;
+            document.getElementById('bank').style.backgroundColor = a;
+        }
+        function summer () {
+            var amt = document.getElementById('amount').value;
+            var qty = document.getElementById('quantity').value;
+            document.getElementById('total').innerText = amt * qty;
+        }
+        function to () {
+            var a = document.getElementById('To').value;
+            document.getElementById('to').innerText = a;
+        }
+        function from () {
+            var b = document.getElementById('From').value;
+            document.getElementById('from').innerText = b;
+        }
+        function datee () {
+            var c = document.getElementById('Date').value;
+            document.getElementById('date').innerText = c;
+        }
+        function venue () {
+            var d = document.getElementById('Venue').value;
+            document.getElementById('venue').innerText = d;
+        }      
+
+        var nameList = ['yash','daivik','pranav','krishna'];
+        var finalWord;
+        for (var i = 0 ; i < nameList.length; i++) {
+            tempLen = 0;
+            finalWord = '';
+            if (nameList[i].length > tempLen) {
+                tempLen = nameList[i].length;
+                finalWord = nameList[i];  
+
+            }
+        }
+        alert (finalWord);
+
+        var Fname = 'yash'
+        var Lname = 'bhatt'
+        var Mob = 9930395307;
+        Mob = String(Mob)
+
+        var password = '';
+        var firstSection, secondSection, thirdSection;
+
+        firstSection = Fname.slice(0,3);
+        secondSection = Mob.slice(0,3);
+        thirdSection = Lname.slice(-3);
+
+        password += firstSection + secondSection + thirdSection;
+        alert(password);
+
+
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html> 
